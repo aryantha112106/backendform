@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(9, 9, 23);
+        font-family: poppins, sans-serif;
+        overflow-x: hidden;
+      }
+      .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-us {
+        width: 95%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(17, 25, 40, 0.83);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        padding: 32px;
+        border-radius: 12px;
+        box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
+        margin-top: 28px;
+        gap: 12px;
+      }
+
+      .contact-email {
+        font-size: 28px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: rgb(242, 243, 244);
+      }
+
+      .contact-input {
+        background-color: transparent;
+        border: 1px solid rgba(177, 178, 179, 0.314);
+        outline: none;
+        font-size: 18px;
+        color: rgb(242, 243, 244);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+
+      .contact-text {
+        background-color: transparent;
+        border: 1px solid rgba(177, 178, 179, 0.314);
+        outline: none;
+        font-size: 18px;
+        color: rgb(242, 243, 244);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+
+      .contact-submit {
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        background: -webkit-linear-gradient(
+          225deg,
+          rgb(132, 0, 255) 0%,
+          rgb(230, 0, 255) 100%
+        );
+        padding: 13px 16px;
+        margin-top: 2px;
+        border-radius: 12px;
+        border: none;
+        color: rgb(242, 243, 244);
+        font-size: 18px;
+        font-weight: 600;
+      }
+    </style>
+
+    <div class="contact">
+      <form action="/submit" method="POST" class="contact-us">
+        <div class="contact-email">Mamaearth Feedback Form</div>
+        <input
+          type="email"
+          placeholder="Your Email"
+          name="from_email"
+          class="contact-input"
+        />
+        <input
+          type="text"
+          placeholder="First Name"
+          name="First Name"
+          class="contact-input"
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          name="Last Name"
+          class="contact-input"
+        />
+        <input
+          type="number"
+          placeholder="Phone No"
+          name="Phone No"
+          class="contact-input"
+        />
+        <input
+          type="text"
+          placeholder="State"
+          name="State"
+          class="contact-input"
+        />
+        <input
+          type="text"
+          placeholder="City"
+          name="City"
+          class="contact-input"
+        />
+        <input
+          type="text"
+          placeholder="House No"
+          name="House No"
+          class="contact-input"
+        />
+        <input
+          type="text"
+          placeholder="Landmark"
+          name="Landmark"
+          class="contact-input"
+        />
+
+        <textarea
+          name="message"
+          class="contact-text"
+          placeholder="Message"
+          rows="4"
+        ></textarea>
+        <input type="submit" class="contact-submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>
